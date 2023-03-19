@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MEGABLOCK</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <section class="contenedor nav">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="enlaces-header">
+                    <a href="index.html">Inicio</a>
+                    <a href="quienes.html">Quienes somos?</a>
+                    <a href="mision.html">Mision y Vision</a>
+                    <a href="responsabilidad.html">Responsabilidad Social</a>
+                    <a href="contactanos.html">Contactanos</a>
+                </div>
+                <div class="hamburguer">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </section>
+        </nav>
+
+        <div class="contenedor">
+            <section class="contenido-header-contact">
+                <section class="textos-header-contact">
+                    <!-- <img src="img/handshake.jpg"> -->
+                    <span>
+                        <h1>¡CONTACTANOS!</h1>
+                    </span>
+
+                    <p>Contáctenos sobre cualquier cosa relacionada con nuestra empresa o nuestros servicios.<br>
+                        Haremos todo lo posible por darle respuesta a la brevedad.</p>
+                    <a href="#form">Contáctenos!</a>
+                </section>
+
+                <!-- <img src="img/icon_contact.svg" alt="" data-aos="zoom-out-up" data-aos-duration="1500"> -->
+            </section>
+        </div>
+    </header>
+
+    <section class="form contenedor">
+        <section class="textos-questions">
+            <form id="form" action="/server" method="get">
+                <h1>Contacto</h1>
+                <form action="">
+                    <fieldset>
+                        <div class="form-group">
+                            <input id="name" type="text" name="name" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input id="tel" type="tel" name="tel" placeholder="Telefono">
+                        </div>
+                        <div class="form-group">
+                            <input id="email" type="email" name="email" placeholder="Correo electronico" required>
+                        </div>
+                        <div class="form-group">
+                            <input id="asunto" type="text" name="asunto" placeholder="Asunto del mensaje">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="description" name="description" cols="30" rows="3"
+                                placeholder="Mensaje"></textarea>
+                        </div>
+                        <button>Enviar</button>
+                    </fieldset>
+                </form>
+            </form>
+        </section>
+        <div class="contenido-ubicacion">
+            <p>Megablock</p>
+            <p><img src="img/important.png" class="item-imagen"></img> Gladiola SN L-14MZ-O Colonia Las Margaritas</p>
+            <p><img src="img/telephone.png" class="item-imagen"></img> 618 3654313</p>
+            <p><img src="img/email.png" class="item-imagen"></img> Megablockpyc22@gmail.com</p>
+            <p><img src="img/ubicacion.png" class="item-imagen"></img> Google Maps</p>
+            <br>
+            <img src="img/location.svg" alt="imagen de referencia para la localizacion del edificio">
+        </div>
+    </section>
+
+    <!---- Agregar una galeria mostrando el edificio -->
+
+    <footer>
+        <div class="partFooter">
+            <a href="#">
+                <img src="img/logo-removebg.png" alt="">
+            </a>
+        </div>
+        <div class="partFooter">
+            <h4>Servicios</h4>
+            <a href="#">Services 1</a>
+            <a href="#">Services 2</a>
+            <a href="#">Services 3</a>
+        </div>
+        <div class="partFooter">
+            <h4>Acerca de</h4>
+            <a href="#">FAQ</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div class="partFooter">
+            <h4>Redes sociales</h4>
+            <div class="social-media">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
