@@ -18,131 +18,84 @@
             <section class="contenedor nav">
                 <div class="logo">
                     <a href="index.html">
-                    <img src="img/logo.png" alt="" >
+                        <img src="img/logo.png" alt="">
                     </a>
                 </div>
                 <div class="enlaces-header">
-                    <a href="#">Inicio</a>
-                    <a href="#">Quienes somos?</a>
-                    <a href="#">Mision y Vision</a>
-                    <a href="#">Responsabilidad Social</a>
-                    <a href="#">Contactanos</a>
+                    <a href="index.html">Inicio</a>
+                    <a href="quienes.html">Quienes somos?</a>
+                    <a href="mision.html">Mision y Vision</a>
+                    <a href="responsabilidad.html">Responsabilidad Social</a>
+                    <a href="contactanos.html">Contactanos</a>
                 </div>
                 <div class="hamburguer">
                     <i class="fas fa-bars"></i>
                 </div>
             </section>
         </nav>
-        
+
         <div class="contenedor">
-            
-            <section class="contenido-header">
-                
-                <section class="textos-header">
-                    
-                    <h1>¡MEGABLOCK ES TU MEJOR OPCIÓN!</h1>
-                    <p>Cotiza sin compromiso.</p>
-                    <a href="https://api.whatsapp.com/send?phone=%2B526183654313&fbclid=IwAR0C-l1zMOro6MhmtYjBskbB0dGinFu6a9Uq043-BgamM29ZRRmrb3RCIas">COTIZAR AHORA »</a>
+            <section class="contenido-header-contact">
+                <section class="textos-header-contact">
+                    <!-- <img src="img/handshake.jpg"> -->
+                    <span>
+                        <h1>¡CONTACTANOS!</h1>
+                    </span>
+
+                    <p>Contáctenos sobre cualquier cosa relacionada con nuestra empresa o nuestros servicios.<br>
+                        Haremos todo lo posible por darle respuesta a la brevedad.</p>
+                    <a href="#form">Contáctenos!</a>
                 </section>
-                <img src="img/mega-marketing.jpg" alt="">
+
+                <!-- <img src="img/icon_contact.svg" alt="" data-aos="zoom-out-up" data-aos-duration="1500"> -->
             </section>
         </div>
     </header>
-    <section class="about-us">
-        <div class="contenedor1">
-            <h2 class="titulo">Contamos con certificacion de laboratorio para que tu construccion sea de mas alto nivel y tu experiencia sea la mejor!</h2>
-            <div class="contenedor-articulo">
-                <div class="articulo" data-aos="zoom-in-right">
-                    <i class="fas fa-pen-fancy"></i>
-                    <h3>Diseño </h3>
-                    <p>Los bloques de concreto se pueden utilizar para crear una variedad de diseños y estilos arquitectónicos, lo que los hace ideales para proyectos de construcción de diferentes tipos y tamaños.!</p>
-                    <a href="#">Read more ---></a>
-                </div>
-                <div class="articulo" data-aos="zoom-in-right">
-                    <i class="fas fa-code"></i>
-                    <h3>Aislamiento térmico y acústico:</h3>
-                    <p>Los bloques de concreto tienen una alta capacidad de aislamiento térmico y acústico, lo que ayuda a reducir los costos de energía y a mejorar el confort de los habitantes.!</p>
-                    <a href="#">Read more ---></a>
-                </div>
-                <div class="articulo" data-aos="zoom-in-right">
-                    <i class="fas fa-cog"></i>
-                    <h3>Bajo mantenimiento</h3>
-                    <p>Los bloques de concreto requieren poco mantenimiento y son resistentes a la degradación, lo que reduce los costos de mantenimiento a largo plazo.!</p>
-                    <a href="#">Read more ---></a>
-                </div>
-                <div class="articulo" data-aos="zoom-in-right">
-                    <i class="fas fa-chart-pie"></i>
-                    <h3>Sostenibilidad</h3>
-                    <p>Los bloques de concreto son un material de construcción sostenible, ya que son fabricados con materiales naturales y reciclables y pueden ser reutilizados en futuros proyectos de construcción.!</p>
-                    <a href="#">Read more ---></a>
-                </div>
-                <div class="articulo" data-aos="zoom-in-right">
-                    <i class="fas fa-comments"></i>
-                    <h3>Rapidez de construcción</h3>
-                    <p>La construcción con bloques de concreto es rápida y eficiente, ya que los bloques son fáciles de cortar, ajustar y colocar.!</p>
-                    <a href="#">Read more ---></a>
-                </div>
-                <div class="articulo" data-aos="zoom-in-right">
-                    <i class="fas fa-chart-bar"></i>
-                    <h3>Durabilidad</h3>
-                    <p>Los bloques de concreto son muy resistentes a la intemperie, los terremotos y los incendios, lo que los hace ideales para la construcción de estructuras de gran envergadura.!</p>
-                    <a href="#">Read more ---></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="questions contenedor">
+
+    <section class="form contenedor">
         <section class="textos-questions">
-            <h1>Construyendo un mejor futuro, bloque a bloque</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, dolorum.</p>
-            <a href="#">COTIZAR AHORA »</a>
+            <form id="form" action="/server" method="get">
+                <h1>Contacto</h1>
+                <form action="">
+                    <fieldset>
+                        <div class="form-group">
+                            <input id="name" type="text" name="name" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input id="tel" type="tel" name="tel" placeholder="Telefono">
+                        </div>
+                        <div class="form-group">
+                            <input id="email" type="email" name="email" placeholder="Correo electronico" required>
+                        </div>
+                        <div class="form-group">
+                            <input id="asunto" type="text" name="asunto" placeholder="Asunto del mensaje">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="description" name="description" cols="30" rows="3"
+                                placeholder="Mensaje"></textarea>
+                        </div>
+                        <button>Enviar</button>
+                    </fieldset>
+                </form>
+            </form>
         </section>
-        <img src="img/building_blocks.svg" alt="" data-aos="zoom-out-up" data-aos-duration="2000">
-    </section>
-
-    <section class="results">
-        <div class="contenedor1 conten-results">
-            <section class="numbers">
-                <div class="number" data-aos="zoom-in-left">
-                    <h4>+8863</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, id.</p>
-                </div>
-                <div class="number" data-aos="zoom-in-left">
-                    <h4>+8863</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, id.</p>
-                </div>
-                <div class="number" data-aos="zoom-in-left">
-                    <h4>+8863</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, id.</p>
-                </div>
-                <div class="number" data-aos="zoom-in-left">
-                    <h4>+8863</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, id.</p>
-                </div>
-            </section>
-            <section class="results-text">
-                <h4>Construye la casa de tus sueños con nuestros bloques.</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sequi nihil unde.</p>
-                <a href="#" >Cotizar ahora »</a>
-            </section>
+        <div class="contenido-ubicacion">
+            <p>Megablock</p>
+            <p><img src="img/important.png" class="item-imagen"></img> Gladiola SN L-14MZ-O Colonia Las Margaritas</p>
+            <p><img src="img/telephone.png" class="item-imagen"></img> 618 3654313</p>
+            <p><img src="img/email.png" class="item-imagen"></img> Megablockpyc22@gmail.com</p>
+            <p><img src="img/ubicacion.png" class="item-imagen"></img> Google Maps</p>
+            <br>
+            <img src="img/location.svg" alt="imagen de referencia para la localizacion del edificio">
         </div>
     </section>
 
-    <section class="contenedor1 services">
-        <img src="img/build_your__home.svg" alt="">
-        <div class="box-skills">
-            <h4><i class="far fa-check-circle"></i> Innovacion</h4>
-            <h4><i class="far fa-check-circle"></i> Integridad </h4>
-            <h4><i class="far fa-check-circle"></i> Confianza</h4>
-            <h4><i class="far fa-check-circle"></i> Congruencia</h4>
-            <h4><i class="far fa-check-circle"></i> Lealtad</h4>
-        </div>
-    </section>
+    <!---- Agregar una galeria mostrando el edificio -->
 
     <footer>
         <div class="partFooter">
-            <a href="#" >
-            <img src="img/logo-removebg.png" alt="">
+            <a href="#">
+                <img src="img/logo-removebg.png" alt="">
             </a>
         </div>
         <div class="partFooter">
@@ -160,10 +113,10 @@
         <div class="partFooter">
             <h4>Redes sociales</h4>
             <div class="social-media">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-youtube"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
             </div>
         </div>
     </footer>
