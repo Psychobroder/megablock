@@ -119,9 +119,16 @@ nav {
 
 .contenido-header>img {
     width: 550px;
-    animation: ease-in animat 1s;
 }
 
+.principal img{
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(17, 29, 48, .26);
+    width: 500px;
+}
+.principal img:hover {
+    box-shadow: 0 8px 32px rgba(42, 176, 216, 0.46);
+}
 @keyframes animat {
     0% {
         transform: scale(0);
@@ -129,7 +136,7 @@ nav {
 
     100% {
         transform: scale(1);
-    }
+        }
 }
 
 
@@ -275,7 +282,7 @@ nav {
 /* Results */
 
 .results {
-    background: #2493df;
+    background: #5D6678;
     padding-top: 30px;
 }
 
@@ -302,7 +309,7 @@ nav {
 
 .numbers .number h4 {
     color: #fff;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 500;
     margin-bottom: 20px;
 }
@@ -468,7 +475,7 @@ footer {
 
     .questions {
         height: 720px;
-        justify-content: space-evenly;
+        justify-content: space-around;
         flex-direction: column;
     }
 
@@ -524,6 +531,12 @@ footer {
     .partFooter {
         width: 40%;
         margin-bottom: 40px;
+    }
+    /* Formulario */
+    .form {
+        height: 810px;
+        justify-content: space-between;
+        flex-direction: column;
     }
 }
 
@@ -619,4 +632,158 @@ footer {
         width: 95%;
         margin-bottom: 40px;
     }
+    /* Formulario */
+
+    .form>img {
+        width: 200px;
+    }
+}
+
+/* Formulario */
+
+.form {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    border-radius: 24px;
+}
+
+.form > img {
+    width: 550px;
+}
+.form:hover {
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.5);
+}
+.form-group {
+    /* border: 1px dotted gray; */
+    margin: 20px 0;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #838383;
+}
+  
+  input,
+  textarea {
+     width: 100%;
+    margin: 10px;
+    padding: 10px;
+    background: transparent;
+    appearance: none;
+    font-family: Lato;
+    border: none;
+    color: #717884;    
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(11 8 5 / var(--tw-border-opacity));
+    --tw-border-opacity: 0.2;
+  }
+  
+  fieldset {
+    margin: 10px;
+    font-weight: bold;
+    background: #FEFEFE;
+    border: none;
+  }
+  
+  button {
+    padding: 12px 24px;
+    background: #2493DF;
+    font-size: 15px;
+    border: none;
+    margin: 10px    ;
+    color: white;
+    border-radius: 15px;
+    
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow:  0 8px 32px rgba(31, 200, 222, 0.46);
+  }
+
+  button:hover {
+    transform: scale(1.1);
+  }
+  .contenido-header-contact {
+    
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /* align-items: center; */
+    }
+
+    .contenido-header-contact img {
+        max-width:100% ;
+    }
+    .contenido-header-contact a {
+        margin: 28px 0 0 0;
+        width: 130px;
+        display: inline-block;
+        background: #2493df;
+        text-align: center;
+        color: #fff;
+        padding: 12px 0;
+        text-decoration: none;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 14px;
+        border-radius: 5px;
+        box-shadow: 0 8px 32px rgba(42, 176, 216, 0.46);
+    }
+    
+      .contenido-header-contact a:hover{
+        transform: scale(1.1);
+      }
+  .item-imagen {
+    width: 15px;
+  }
+  .textos-header-contact {
+    margin: 0 30 0 30px;
+    text-align: center;
+  }
+
+  .textos-header-contact span {
+    background-image: url('img/handshake.png');
+    display: block;
+    padding: 50px;
+    background-position: right bottom, left top;
+  }
+  
+  .contenido-ubicacion {
+    color: #838383;
+
+  }
+  .contenido-ubicacion img {
+    max-height: 200px;
+    color: #838383;
+
+  }
+
+/* Responsabilidad */
+
+.responsabilidad {
+    width: 29%;
+    background: #fff;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 45px 30px 60px 30px;
+    transition: 0.5s;
+}
+background-imagen{
+    background-image: url("/img/handshake.jpg");
+    background-position: 50%;
+}
+.responsabilidad:hover {
+    box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
+}
+.responsabilidad>p {
+    font-weight: 100;
+    color: #5D6678;
+    margin-top: 15px;
+    padding-bottom: 20px;
 }
