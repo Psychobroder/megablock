@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .banner {
+            background-image: url('img/hand1.jpg');
+        }
+    </style>
 </head>
 
 <body>
@@ -26,7 +31,7 @@
                     <a href="quienes.html">Quienes somos?</a>
                     <a href="mision.html">Mision y Vision</a>
                     <a href="responsabilidad.html">Responsabilidad Social</a>
-                    <a href="contactanos2.html">Contactanos</a>
+                    <a href="contactanos2.html">Contacto</a>
                 </div>
                 <div class="hamburguer">
                     <i class="fas fa-bars"></i>
@@ -34,34 +39,41 @@
             </section>
         </nav>
 
-        <div class="contenedor">
-            <section class="contenido-header" id="quienes">
-                <img src="img/ICON_STORY.svg" alt="">
-                <section class="textos-header">
-                    <h1>NUESTRA HISTORIA</h1>
-                    <p>MEGABLOCK es una empresa fabricante de productos prefabricados de concreto que inició operaciones
-                        en el año 2022 en México , tras un asocio entre inversionistas Duranguenses.</p>
-                    <p>Desde sus inicios cuenta con la más alta tecnología, la cual es capaz de producir de manera 100%
-                        automatizada todos nuestros productos prefabricados de concreto. </p>
-                    <a href="#">Boton</a>
-                </section>
+        <div class="contenedor2">
+            <section class="contenido-header-contact">
+                <section class="textos-header-contact">
 
+                    <div class="banner">
+                        <h5 class="title"> Contactanos</h5>
+                    </div>
+
+                    <p class="description">Contáctenos sobre cualquier cosa relacionada con nuestra empresa o nuestros
+                        servicios.<br>
+                        Haremos todo lo posible por darle respuesta a la brevedad.</p>
+                    <a href="#form">Contáctenos!</a>
+                </section>
             </section>
         </div>
     </header>
-    <section class="questions contenedor">
 
-        <!--  INSERTE AQUI VIDEO DE PIPE AVENTANDO EL BLOQUE -->
-        <section class="textos-questions">
-            <h1>UN EQUIPO ÁGIL,
-                HACIENDO BLOQUES PODEROSOS</h1>
-            <p>En MEGABLOCK,creamos excelentes soluciones para los requisitos de su construcción. Desde que empezamos
-                nos dedicamos 100% a aprender y mejorar la calidad de nuestros bloques, convirtiendonos en parte
-                importante de sus proyectos. </p>
-            <a href="#">COTIZAR AHORA »</a>
+    <section id="form" class="form contenedor">
+        <section class="ubicacion-google">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3644.1433105504875!2d-104.70230099999999!3d24.026011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjTCsDAxJzMzLjYiTiAxMDTCsDQyJzA4LjMiVw!5e0!3m2!1ses-419!2smx!4v1681142068604!5m2!1ses-419!2smx"
+                width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
-        <img src="img/icon_genius.svg" alt="">
+        <div class="contenido-ubicacion">
+            <p>Megablock</p>
+            <p><img src="img/important.png" class="item-imagen"></img> Gladiola SN L-14MZ-O Colonia Las Margaritas</p>
+            <p><img src="img/telephone.png" class="item-imagen"></img> 618 3654313</p>
+            <p><img src="img/email.png" class="item-imagen"></img> Megablockpyc22@gmail.com</p>
+            <p><img src="img/ubicacion.png" class="item-imagen"></img> Google Maps</p>
+            <br>
+        </div>
     </section>
+
+    <!---- Agregar una galeria mostrando el edificio -->
 
     <footer>
         <div class="partFooter">
@@ -78,8 +90,6 @@
         <div class="partFooter">
             <h4>Acerca de</h4>
             <a href="FAQ.html ">Preguntas Frecuentes</a>
-            <a href="#">Terminos de Uso</a>
-            <a href="#">Politicas de Privacidad</a>
         </div>
         <div class="partFooter">
             <h4>Redes sociales</h4>
@@ -98,5 +108,3 @@
 </body>
 
 </html>
-
-<!--Las imagenes no aparecen porque no haz inicializdo el script aos -->

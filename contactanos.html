@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .banner {
+            background-image: url('img/hand1.jpg');
+        }
+    </style>
 </head>
 
 <body>
@@ -18,7 +23,7 @@
             <section class="contenedor nav">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="img/logo.png" alt="">
+                        <img src="img/logo-removebg.png" alt="">
                     </a>
                 </div>
                 <div class="enlaces-header">
@@ -26,7 +31,7 @@
                     <a href="quienes.html">Quienes somos?</a>
                     <a href="mision.html">Mision y Vision</a>
                     <a href="responsabilidad.html">Responsabilidad Social</a>
-                    <a href="contactanos.html">Contactanos</a>
+                    <a href="contactanos.html">Contacto</a>
                 </div>
                 <div class="hamburguer">
                     <i class="fas fa-bars"></i>
@@ -34,28 +39,27 @@
             </section>
         </nav>
 
-        <div class="contenedor">
+        <div class="contenedor2">
             <section class="contenido-header-contact">
                 <section class="textos-header-contact">
-                    <!-- <img src="img/handshake.jpg"> -->
-                    <span>
-                        <h1>¡CONTACTANOS!</h1>
-                    </span>
 
-                    <p>Contáctenos sobre cualquier cosa relacionada con nuestra empresa o nuestros servicios.<br>
+                    <div class="banner">
+                        <h5 class="title"> Contactanos</h5>
+                    </div>
+
+                    <p class="description">Contáctenos sobre cualquier cosa relacionada con nuestra empresa o nuestros
+                        servicios.<br>
                         Haremos todo lo posible por darle respuesta a la brevedad.</p>
                     <a href="#form">Contáctenos!</a>
                 </section>
-
-                <!-- <img src="img/icon_contact.svg" alt="" data-aos="zoom-out-up" data-aos-duration="1500"> -->
             </section>
         </div>
     </header>
 
-    <section class="form contenedor">
+    <section id="form" class="form contenedor">
         <section class="textos-questions">
-            <form id="form" action="/server" method="get">
-                <h1>Contacto</h1>
+            <form action="/server" method="get">
+                <h2 class="form-title">Contacto</h2>
                 <form action="">
                     <fieldset>
                         <div class="form-group">
@@ -100,23 +104,24 @@
         </div>
         <div class="partFooter">
             <h4>Servicios</h4>
-            <a href="#">Services 1</a>
-            <a href="#">Services 2</a>
-            <a href="#">Services 3</a>
+            <a href="#">Venta de Block</a>
+            <a href="#">Produccion de Block</a>
+            <a href="#">Fletes</a>
         </div>
         <div class="partFooter">
             <h4>Acerca de</h4>
-            <a href="#">FAQ</a>
-            <a href="#">Terms of Use</a>
-            <a href="#">Privacy Policy</a>
+            <a href="FAQ.html ">Preguntas Frecuentes</a>
+            <a href="#">Terminos de Uso</a>
+            <a href="#">Politicas de Privacidad</a>
         </div>
         <div class="partFooter">
             <h4>Redes sociales</h4>
             <div class="social-media">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-youtube"></i>
+                <a href="https://www.facebook.com/profile.php?id=100087967210264" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+                <!-- <i class="fab fa-twitter"></i> -->
+                <!-- <i class="fab fa-instagram"></i> -->
+                <!-- <i class="fab fa-youtube"></i> -->
             </div>
         </div>
     </footer>

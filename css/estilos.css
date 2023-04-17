@@ -10,10 +10,9 @@ body {
 }
 
 h1,
-h2,
+h2, 
 h3,
 h4,
-h5,
 h6 {
     color: #1d273b;
     font-weight: 300;
@@ -26,7 +25,6 @@ h6 {
     overflow: hidden;
 }
 
-
 .contenedor1 {
     width: 90%;
     max-width: 1000px;
@@ -35,9 +33,15 @@ h6 {
     padding: 60px 0;
 }
 
+.contenedor2 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
 
 h1 {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 
@@ -50,7 +54,7 @@ header::before {
 
 
 nav {
-    width: 100%;
+        width: 100%;
     height: 80px;
     background: #fff;
     border-bottom: 1px solid transparent;
@@ -89,6 +93,7 @@ nav {
     color: #5D6678;
     text-decoration: none;
     margin-left: 20px;
+    flex-wrap: nowrap;
 }
 .enlaces-header a:hover {
     color: #2493df;
@@ -141,7 +146,7 @@ nav {
 
 
 .textos-header {
-    margin: 0 0 0 30px;
+    margin: 30px;
 }
 .textos-header a:hover{
     transform: scale(1.1);
@@ -176,6 +181,7 @@ nav {
     font-size: 50px;
 }
 
+ 
 /* About us */
 
 .about-us {
@@ -458,7 +464,7 @@ footer {
     }
 
     .contenido-header>img {
-        width: 400px;
+        width: 45%;
     }
 
     .textos-header {
@@ -534,9 +540,12 @@ footer {
     }
     /* Formulario */
     .form {
-        height: 810px;
+        height: 900px;
         justify-content: space-between;
         flex-direction: column;
+    }
+    .form-title {
+        padding-top: 20px;
     }
 }
 
@@ -647,13 +656,10 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px;
+    padding: 40px 24px;
     border-radius: 24px;
 }
 
-.form > img {
-    width: 550px;
-}
 .form:hover {
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.5);
 }
@@ -662,8 +668,7 @@ footer {
     margin: 20px 0;
 }
 
-h1 {
-    margin-top: 20px;
+.form-title {
     color: #838383;
 }
   
@@ -739,19 +744,30 @@ h1 {
       .contenido-header-contact a:hover{
         transform: scale(1.1);
       }
+      .banner {
+        background-image: url('img/hand1.jpg');
+        background-size: cover;
+        text-align: center;
+        padding: 50px;
+        margin-top: -300px;
+        color: whitesmoke;
+        background-position: bottom;
+      }
+      
+      .title {
+        font-size: 40px;
+        margin: 0;
+        font-weight: 300;
+    }
+      .description {
+      margin-top: 20px;
+    } 
   .item-imagen {
     width: 15px;
   }
   .textos-header-contact {
     margin: 0 30 0 30px;
     text-align: center;
-  }
-
-  .textos-header-contact span {
-    background-image: url('img/handshake.png');
-    display: block;
-    padding: 50px;
-    background-position: right bottom, left top;
   }
   
   .contenido-ubicacion {
@@ -774,10 +790,7 @@ h1 {
     padding: 45px 30px 60px 30px;
     transition: 0.5s;
 }
-background-imagen{
-    background-image: url("/img/handshake.jpg");
-    background-position: 50%;
-}
+
 .responsabilidad:hover {
     box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
 }

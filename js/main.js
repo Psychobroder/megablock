@@ -10,7 +10,6 @@ window.addEventListener("scroll", function(){
         document.getElementsByTagName("nav")[0].style.top = "-100px"
     }
     ubicacionPrincipal= desplazamientoActual; //200
-
 })
 
 // Menu
@@ -28,4 +27,4 @@ document.querySelectorAll(".hamburguer")[0].addEventListener("click", function()
     }
 
     enlacesHeader.classList.toggle("menudos")
-})
+})  
